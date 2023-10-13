@@ -1,4 +1,4 @@
-package br.com.edward.todolist.Filter;
+package br.com.edward.todolist.filter;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import br.com.edward.todolist.user.IUserRepository;
