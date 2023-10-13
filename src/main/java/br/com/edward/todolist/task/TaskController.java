@@ -42,10 +42,20 @@ public class TaskController {
     }
 
     @PutMapping("/{id}")
-    public TaskModel update(@RequestBody TaskModel taskModel, @PathVariable UUID id, HttpServletRequest request){
+    public ResponseEntity update(@RequestBody TaskModel taskModel, @PathVariable UUID id, HttpServletRequest request){
         var task = this.taskRepository.findById(id).orElse(null);
-        Utils.copyNonNullProperties(taskModel, task);
 
-        return this.taskRepository.save(task);
+        if(task == null){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Impossible to find a task");
+        }
+
+        if(!task.getIdUser().equals(request.getAttribute("idUser"))){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Impossible to set a task to other users");
+        }
+
+        Utils.copyNonNullProperties(taskModel, task);
+        var taskUpdated = this.taskRepository.save(task);
+
+        return ResponseEntity.ok().body(taskUpdated);
     }
 }
