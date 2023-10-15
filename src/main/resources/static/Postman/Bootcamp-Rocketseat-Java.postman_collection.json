@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "f245513e-f33e-418e-ad9f-acd9fe2b625b",
+		"name": "Bootcamp - Rocketseat | Java ☕",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15286462"
+	},
+	"item": [
+		{
+			"name": "Render",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "New User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"const body = JSON.parse(pm.request.body);",
+											"",
+											"var userName = body.userName;",
+											"var password = body.password;",
+											"",
+											"pm.globals.set(\"TODOList_userName\", userName);",
+											"pm.globals.set(\"TODOList_password\", password);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Will Smith\",\n    \"userName\" : \"willsm\",\n    \"password\" : \"557923\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://todolist-rocketseat-5zd1.onrender.com/users/",
+									"protocol": "https",
+									"host": [
+										"todolist-rocketseat-5zd1",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "User Tasks",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{TODOList_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{TODOList_userName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://todolist-rocketseat-5zd1.onrender.com/tasks/",
+									"protocol": "https",
+									"host": [
+										"todolist-rocketseat-5zd1",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"tasks",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Task",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{TODOList_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{TODOList_userName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Task for recording Class Tasks about Spring Boot course\",\n    \"title\": \"Recording class - 2 \",\n    \"priority\": \"High\",\n    \"startAt\": \"2023-10-23T13:30:00\",\n    \"endAt\": \"2023-10-30T14:30:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://todolist-rocketseat-5zd1.onrender.com/tasks/",
+									"protocol": "https",
+									"host": [
+										"todolist-rocketseat-5zd1",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"tasks",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Task",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{TODOList_password}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{TODOList_userName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"priority\": \"Low\",\n    \"description\": \"Task for recording Class Tasks about Spring Boot course - Updating\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://todolist-rocketseat-5zd1.onrender.com/tasks/baca2990-f3ec-48a8-a661-2873f321ebeb",
+									"protocol": "https",
+									"host": [
+										"todolist-rocketseat-5zd1",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"tasks",
+										"baca2990-f3ec-48a8-a661-2873f321ebeb"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
