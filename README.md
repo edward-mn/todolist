@@ -36,7 +36,7 @@ This project it's a task's management, with it we can handle tasks as well as us
 All features could be used through software capable of to make requests following the HTTP patterns, like POSTMAN for example.
 
 ## Demo 👀
-
+<img src="./src/main/resources/static/Demo/todolist-rocket.gif" alt="Header picture - Java | Rocketseat">
 
 > Deploy's endpoint -> https://todolist-rocketseat-5zd1.onrender.com/
 
@@ -96,6 +96,7 @@ To run this project in your machine, you will need to install some dependencies 
 - [H2](https://www.baeldung.com/spring-boot-h2-database)
 - [Postman](https://www.postman.com/)
 - [Render](https://dashboard.render.com/)
+- [Docker](https://www.docker.com/)
 - [Dependencies - Maven](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter)
   - [Loombok](https://projectlombok.org/)
   - [DevTools](https://www.baeldung.com/spring-boot-devtools)
@@ -105,8 +106,6 @@ To run this project in your machine, you will need to install some dependencies 
   - [Bcrypt](https://www.npmjs.com/package/bcrypt)
   - [Starter Validation](https://www.baeldung.com/spring-boot-bean-validation)
 
----
-
 ## 🦹‍ Author
 
 * **Edward Moreira**
@@ -115,8 +114,6 @@ To run this project in your machine, you will need to install some dependencies 
     <img alt="Linkedin - Edward Moreira" src="https://img.shields.io/badge/-Edward--Moreira-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/edward-moreira-5b3056115/">
   </a> 
 * :rocket: [Edward Moreira](https://app.rocketseat.com.br/me/edward-moreira-do-nascimento-02578)
-
----
 
 ## 🤝 Show your support
 
