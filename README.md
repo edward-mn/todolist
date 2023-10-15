@@ -87,7 +87,8 @@ To run this project in your machine, you will need to install some dependencies 
 1. Open the postman
 2. Import the collection
    1. In the upper left corner click (Import) -> Choose Files -> Go to where you extracted the project and the select the [Bootcamp - Rocketseat | Java ☕](./src/main/resources/static/Postman/Bootcamp-Rocketseat-Java.postman_collection.json) file
-   2. Now, select the endpoint you want within the imported collection and click send.3. 
+   2. Now, select the endpoint that you want within the imported collection and click in send.
+   3. Use as you want and wish! 
 
 ## 🛠 Technologies
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
