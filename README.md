@@ -39,7 +39,6 @@ All features could be used through software capable of to make requests followin
 
 > Deploy's endpoint -> https://todolist-rocketseat-5zd1.onrender.com/
 
-
 ## ❗ Dependencies & Tools
 To run this project in your machine, you will need to install some dependencies and made some configurations, therofere use this [documentation](https://efficient-sloth-d85.notion.site/Curso-de-Java-2408d11bfc3447e980fe9460b6293976):
 - [Java & Kit](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)
