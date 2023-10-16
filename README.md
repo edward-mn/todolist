@@ -112,7 +112,7 @@ To run this project in your machine, you will need to install some dependencies 
 * <a href="https://www.linkedin.com/in/edward-moreira-5b3056115/">
     <img alt="Linkedin - Edward Moreira" src="https://img.shields.io/badge/-Edward--Moreira-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/edward-moreira-5b3056115/">
   </a> 
-* [Edward Moreira](https://app.rocketseat.com.br/me/edward-moreira-do-nascimento-02578) :rocket:
+* [Rocketseat](https://app.rocketseat.com.br/me/edward-moreira-do-nascimento-02578) :rocket:
 
 ## 🤝 Show your support
 
