@@ -20,11 +20,10 @@
   <p align="center">
     <a href="#-about">About</a> |
     <a href="#-demo">Demo</a> |
-    <a href="#-dependencies">Dependecies</a> |
+    <a href="#-dependencies-&-tools">Dependecies</a> |
     <a href="#-functionalities">Functionalities</a> |
     <a href="#-technologies">Technologies</a> |
-    <a href="#-how-to-execute-and-download">How to execute</a> | 
-    <a href="#-demo">Important links</a> | 
+    <a href="#-how-to-execute-and-download">How to execute</a> |
     <a href="#-author">Author</a> | 
     <a href="#-show-your-support">Suport</a>
   </p>
@@ -35,7 +34,7 @@ This project it's a task's management, with it we can handle tasks as well as us
 
 All features could be used through software capable of to make requests following the HTTP patterns, like POSTMAN for example.
 
-## Demo 👀
+## 👀 Demo
 <img src="./src/main/resources/static/Demo/todolist-rocket.gif" alt="Header picture - Java | Rocketseat">
 
 > Deploy's endpoint -> https://todolist-rocketseat-5zd1.onrender.com/
